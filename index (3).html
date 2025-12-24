@@ -1,98 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nurul Hidayu | Internship Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Nurul Hidayu, Information Technology student seeking internship in software development, database systems, and UI/UX design." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header id="home">
-  <nav>
-    <h1>Nurul Hidayu</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- ================ HEADER / NAV ================= -->
+<header>
+  <div class="nav-container">
+    <div class="logo">Nurul <span>Hidayu</span></div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
 
-<section class="hero">
-  <div class="hero-content">
-
-    <!-- Replace profile.jpg with your professional photo -->
-    <img src="profile.jpg" alt="Nurul Hidayu Profile Photo" class="profile-img">
-
-    <h2>Hello, I'm Nurul Hidayu</h2>
-    <p>Information Technology Student | Internship Seeker</p>
-    <a href="#projects">View My Projects</a>
-
+    <nav>
+      <ul id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Specialization</a></li>
+        <li><a href="#portfolio" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</section>
 </header>
 
-<section id="projects">
-  <h2>Projects</h2>
+<!-- ================ HOME ================= -->
+<section id="home" class="layout reveal">
 
-  <div class="project">
-    <h3>Mental Health Awareness Application (Java)</h3>
-    <p>
-      Java-based application designed to promote mental health awareness.
-      Implemented core logic using object-oriented programming and UML design.
-    </p>
+  <!-- LEFT: PHOTO -->
+  <div class="panel-right">
+    <aside class="photo-card">
+      <div class="photo-wrapper">
+        <div class="photo-frame">
+          <img src="nurul-profile.jpg" alt="Nurul Hidayu Profile Photo">
+        </div>
+      </div>
+      <p class="photo-role">Information Technology • UI/UX • Software</p>
+    </aside>
   </div>
 
-  <div class="project">
-    <h3>ZoomRentals Database System</h3>
-    <p>
-      Database project involving relational schema design, SQL queries,
-      transaction handling, and reporting using MySQL.
+  <!-- RIGHT: TEXT -->
+  <div class="panel hero">
+    <p class="hero-heading">Hello, I'm</p>
+
+    <h1 class="hero-main">
+      <span>Nurul</span>
+      <span class="highlight">Hidayu</span>
+    </h1>
+
+    <p class="hero-role">
+      <span id="typed-role">Information Technology Student</span>
     </p>
-  </div>
 
-  <div class="project">
-    <h3>Sarawak Metro ART Mobile App (UI/UX)</h3>
-    <p>
-      High-fidelity mobile application prototype designed using Figma,
-      including user flows, interface layouts, and usability testing (SUS).
+    <p class="hero-summary">
+      An Information Technology undergraduate student seeking an internship opportunity
+      to apply academic knowledge in software development, database systems, and UI/UX design.
+      Experienced in Java programming, MySQL database design, and mobile application prototyping
+      using Figma. A motivated learner with strong teamwork, communication, and problem-solving skills.
     </p>
-  </div>
-</section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am an undergraduate student from the Faculty of Computer Science and
-    Information Technology (FCSIT), seeking an internship opportunity to
-    apply my academic knowledge, improve my technical skills, and gain
-    real-world industry experience.
-  </p>
-</section>
+    <div class="social-row">
+      <a href="mailto:your-email@gmail.com" class="social-btn">✉</a>
+      <a href="https://www.linkedin.com/in/nurul-hidayu-9503a02a5/" target="_blank" class="social-btn">in</a>
+    </div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <form id="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/nurul-hidayu-9503a02a5/" target="_blank">
-      linkedin.com/in/nurul-hidayu
+    <a href="Nurul_Hidayu_Resume.pdf" download class="btn-primary">
+      Download Resume
     </a>
+  </div>
+</section>
+
+<!-- ================ ABOUT ================= -->
+<section class="about-section" id="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+  <p class="about-text">
+    I am an undergraduate student from the Faculty of Computer Science and Information Technology (FCSIT),
+    pursuing Information Technology. I am interested in software development, database systems,
+    and UI/UX design, and I aim to gain hands-on industry experience through an internship.
   </p>
+</section>
+
+<!-- ================ EDUCATION ================= -->
+<section class="education-section" id="education">
+  <h2 class="section-title">My <span>Education</span></h2>
+
+  <div class="edu-grid">
+    <div class="edu-card">
+      <h3>Universiti Malaysia Sarawak (UNIMAS)</h3>
+      <p>Bachelor of Computer Science (Information Technology)</p>
+      <span class="edu-year">2023 – Present</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================ SKILLS ================= -->
+<section class="skills-section" id="skills">
+  <h2 class="section-title">My <span>Skills</span></h2>
+
+  <div class="skills-grid">
+    <div class="skill"><p>Java</p></div>
+    <div class="skill"><p>MySQL</p></div>
+    <div class="skill"><p>HTML & CSS</p></div>
+    <div class="skill"><p>UI/UX (Figma)</p></div>
+    <div class="skill"><p>Git & GitHub</p></div>
+  </div>
+</section>
+
+<!-- ================ SPECIALIZATIONS ================= -->
+<section id="services" class="services-section reveal">
+  <h2 class="section-title">My <span>Specializations</span></h2>
+
+  <div class="cards-grid">
+
+    <article class="service-card">
+      <h3>UI / UX Design</h3>
+      <p>
+        Designing user-centered mobile and web interfaces using Figma,
+        focusing on usability, accessibility, and clean visual design.
+      </p>
+    </article>
+
+    <article class="service-card">
+      <h3>Software Development</h3>
+      <p>
+        Developing Java-based applications using object-oriented programming,
+        UML design, and basic backend logic.
+      </p>
+    </article>
+
+    <article class="service-card">
+      <h3>Database Systems</h3>
+      <p>
+        Designing relational databases and writing SQL queries using MySQL
+        for academic projects.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================ PORTFOLIO ================= -->
+<section id="portfolio" class="portfolio-section reveal">
+  <h2 class="section-title">Academic Projects</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="project-card">
+      <h3>Mental Health Awareness Application</h3>
+      <p>
+        Java-based application designed to promote mental health awareness
+        using structured content and interactive features.
+      </p>
+      <p><strong>Tech:</strong> Java, MySQL, UML</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Sarawak Metro ART Mobile App (UI/UX)</h3>
+      <p>
+        High-fidelity mobile application prototype designed using Figma,
+        including user flows and usability testing.
+      </p>
+      <p><strong>Tech:</strong> Figma, UI/UX</p>
+    </div>
+
+    <div class="project-card">
+      <h3>ZoomRentals Database System</h3>
+      <p>
+        Database system featuring vehicle records, transactions, and reporting.
+      </p>
+      <p><strong>Tech:</strong> MySQL, SQL</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================ CONTACT ================= -->
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+
+  <p>Email: your-email@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/nurul-hidayu-9503a02a5/" target="_blank">linkedin.com/in/nurul-hidayu</a></p>
+  <p>Location: Malaysia</p>
 </section>
 
 <footer>
-  <p>© 2025 Nurul Hidayu</p>
+  © <span id="year"></span> Nurul Hidayu
 </footer>
 
-<script src="script.js"></script>
+<script>
+document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
 
